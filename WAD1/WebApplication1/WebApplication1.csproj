@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2132,7 +2133,9 @@
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Aside.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
-    <Content Include="Views\Category\Chart\ChartJS.cshtml" />
+    <Content Include="Views\Shared\Chart_Layout.cshtml" />
+    <Content Include="Views\Chart\ChartJS.cshtml" />
+    <Content Include="Views\Chart\Flot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
