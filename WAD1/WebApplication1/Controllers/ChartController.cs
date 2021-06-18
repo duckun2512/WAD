@@ -24,7 +24,14 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public ActionResult Flot(FormCollection collection)
         {
-
+            try
+            {
+                return RedirectToAction("ChartJS");
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: Chart/Details/5
