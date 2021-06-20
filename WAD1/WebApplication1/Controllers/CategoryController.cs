@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -11,7 +12,17 @@ namespace WebApplication1.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            return View();
+            // ViewData
+            ViewData["Message"] = "Hello World!";
+            ViewData["CurrentTime"] = DateTime.Now;
+            // ViewBag
+            ViewBag.Message = "Hello World!";
+            ViewBag.CurrentTime = DateTime.Now;
+
+            Category category = new Category() { Name = "Watch", Image = "Watch.png", Description = "Watch description" };
+
+            
+            return View(category);
         }
 
         // GET: Category/Details/5
@@ -28,17 +39,21 @@ namespace WebApplication1.Controllers
 
         // POST: Category/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category category)
         {
             try
             {
                 // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    return RedirectToAction("Index");
+                }
 
-                return RedirectToAction("Index");
+                return View(category);
             }
             catch
             {
-                return View();
+                return View(category);
             }
         }
 
