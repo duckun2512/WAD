@@ -6,14 +6,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Practical_WAD.Models
 {
-    public class Classroom
+    public class Status
     {
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Please enter Class Room")]
-        public string Name { get; set; }
-
-        public ICollection<Exam> Exams { get; set; }
+        [Required]
+        public string statusName { get; set; }
     }
 }

@@ -27,5 +27,6 @@ namespace Practical_WAD.Models
         public virtual ExamSubject ExamSubject { get; set; }
         public virtual Classroom Classroom { get; set; }
         public virtual Faculty Faculty { get; set; }
+        public virtual Status Status { get; set; }
     }
 }

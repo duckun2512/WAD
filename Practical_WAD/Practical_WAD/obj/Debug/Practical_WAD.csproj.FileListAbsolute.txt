@@ -1,4 +1,3 @@
-C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\obj\Debug\Practical_WAD.csproj.CoreCompileInputs.cache
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Practical_WAD.dll.config
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Practical_WAD.dll
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Practical_WAD.pdb
@@ -77,6 +76,7 @@ C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\System.Web.WebPages.
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Newtonsoft.Json.xml
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Antlr3.Runtime.pdb
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\obj\Debug\Practical_WAD.csproj.CoreCompileInputs.cache
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\obj\Debug\Practical_WAD.csproj.CopyComplete
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\obj\Debug\Practical_WAD.dll
 C:\Users\shyri\source\repos\Practical_WAD\Practical_WAD\obj\Debug\Practical_WAD.pdb

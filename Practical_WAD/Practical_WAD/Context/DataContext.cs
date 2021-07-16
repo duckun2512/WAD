@@ -21,5 +21,7 @@ namespace Practical_WAD.Context
         public System.Data.Entity.DbSet<Practical_WAD.Models.ExamSubject> ExamSubjects { get; set; }
 
         public System.Data.Entity.DbSet<Practical_WAD.Models.Faculty> Faculties { get; set; }
+
+        public System.Data.Entity.DbSet<Practical_WAD.Models.Status> Status { get; set; }
     }
 }
