@@ -23,6 +23,7 @@ namespace Practical_WAD.Models
         public int ExamSubjectID { get; set; }
         public int ClassroomID { get; set; }
         public int FacultyID { get; set; }
+        public int StatusID { get; set; }
 
         public virtual ExamSubject ExamSubject { get; set; }
         public virtual Classroom Classroom { get; set; }

@@ -55,6 +55,7 @@ namespace Practical_WAD.Controllers
         {
             if (ModelState.IsValid)
             {
+                exam.StatusID = 1;
                 db.Exams.Add(exam);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -81,6 +82,7 @@ namespace Practical_WAD.Controllers
             ViewBag.ClassroomID = new SelectList(db.Classrooms, "Id", "ClassName", exam.ClassroomID);
             ViewBag.ExamSubjectID = new SelectList(db.ExamSubjects, "Id", "ExamName", exam.ExamSubjectID);
             ViewBag.FacultyID = new SelectList(db.Faculties, "Id", "Name", exam.FacultyID);
+            ViewBag.StatusID = new SelectList(db.Status, "Id", "statusName", exam.StatusID);
             return View(exam);
         }
 
@@ -89,7 +91,7 @@ namespace Practical_WAD.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,StartTime,ExamDate,ExamDuration,ExamSubjectID,ClassroomID,FacultyID")] Exam exam)
+        public ActionResult Edit([Bind(Include = "Id,StartTime,ExamDate,ExamDuration,ExamSubjectID,ClassroomID,FacultyID,StatusID")] Exam exam)
         {
             if (ModelState.IsValid)
             {
